@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nolindo Global International - Supplier Daun Pisang Premium</title>
+<title>NOLINDO GLOBAL - Fresh & Frozen Banana Leaves</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#f8faf5}
-header{background:#1a5c2e;color:white;padding:60px 20px;text-align:center}
-header h1{margin:0;font-size:32px}
-header p{font-size:18px;margin-top:10px}
-section{padding:40px 20px;max-width:900px;margin:auto}
-.card{background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);margin-bottom:20px}
-h2{color:#1a5c2e}
-.btn{display:inline-block;background:#1a5c2e;color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:15px}
-footer{background:#111;color:#aaa;padding:20px;text-align:center;margin-top:40px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#1a2e2a;background:#fff;line-height:1.6}
+h1,h2{font-family:'Playfair Display',serif}
+:root{--green:#14352f;--gold:#b68d4a;--beige:#fdf6eb}
+a{text-decoration:none;color:inherit}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 40px;background:#fefcf6;border-bottom:1px solid #eee;position:sticky;top:0;z-index:99}
+.nav{font-size:10px;letter-spacing:1.5px;font-weight:600;color:#5a6b68;display:flex;gap:22px}
+.btn-gold{background:var(--gold);color:#fff;padding:10px 18px;font-size:11px;font-weight:700;border:none;cursor:pointer}
+.btn-dark{background:var(--green);color:#fff;padding:10px 18px;font-size:11px;font-weight:700;border:none;cursor:pointer}
+.btn-outline{border:1px solid rgba(255,255,255,.7);color:#fff;padding:10px 18px;font-size:11px;font-weight:600;background:transparent}
+.hero{position:relative;height:520px;background:var(--green);overflow:hidden;display:flex;align-items:center}
+.hero img{position:absolute;right:0;top:0;width:62%;height:100%;object-fit:cover;opacity:.9}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#14352f 42%,rgba(20,53,47,.2) 100%)}
+.hero-content{position:relative;z-index:2;padding:40px;max-width:620px;color:#fff}
+.eyebrow{font-size:10px;letter-spacing:2.5px;color:#d4b97a;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:42px;line-height:1.1;margin-bottom:16px}
+.hero p{font-size:13px;opacity:.85;line-height:1.7;margin-bottom:8px}
+.meta{font-size:11px;font-weight:700;letter-spacing:.5px;margin:14px 0 22px;color:#d4b97a}
+.strip4{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;border-top:1px solid #e8ddd0;border-bottom:1px solid #e8ddd0;background:#fffcf6}
+.strip4 div{padding:16px 10px;font-size:12px;font-weight:700;border-right:1px solid #eee}
+.strip-dark{background:var(--green);color:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:18px 40px;gap:20px}
+.strip-dark .label{font-size:9px;letter-spacing:1.5px;color:#d4b97a}
+.strip-dark .val{font-size:11px;font-weight:600;margin-top:4px}
+.section{padding:60px 40px}
+.beige{background:var(--beige)}
+.section small{font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:700}
+.section h2{font-size:22px;color:var(--green);margin:6px 0 14px}
+.about-grid{display:grid;grid-template-columns:1.6fr .9fr;gap:40px}
+.card-info{border-left:2px solid #d4b97a;background:#fff;padding:18px 20px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.card-info h3{font-size:12px;letter-spacing:2px;color:var(--gold);margin-bottom:14px}
+.card-info .k{font-size:9px;letter-spacing:1px;color:#888;margin-top:12px}
+.card-info .v{font-size:11px;font-weight:700}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.prod-card{background:#fdf6eb;border:1px solid #efe2c8;overflow:hidden}
+.prod-card img{width:100%;height:200px;object-fit:cover}
+.prod-card .body{padding:16px}
+.prod-card.dark{background:var(--green);color:#fff}
+.table-wrap{background:#fff;border:1px solid #ddd;margin-top:18px;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{background:var(--green);color:#fff;padding:10px;text-align:left;font-size:10px}
+td{padding:10px;border-bottom:1px solid #eee;border-right:1px solid #eee}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+.step{border-top:1px solid #ddd;padding-top:16px}
+.step .n{font-size:11px;color:var(--gold);font-weight:700}
+.form{background:#fff;padding:20px;border:1px solid #eee}
+.form input,.form select,.form textarea{width:100%;padding:8px 10px;border:1px solid #ddd;font-size:11px;margin-top:4px;margin-bottom:10px}
+.form label{font-size:10px;font-weight:700}
+.btn-submit{width:100%;background:var(--green);color:#fff;padding:12px;border:none;font-weight:700;font-size:11px;cursor:pointer}
+.footer{background:#0f241f;color:#a8b5b0;padding:40px;font-size:11px;display:grid;grid-template-columns:1.5fr 1fr .5fr;gap:30px}
+@media(max-width:768px){.hero img{width:100%;opacity:.3}.about-grid,.prod-grid,.steps,.strip4,.strip-dark,.footer{grid-template-columns:1fr}.topbar{padding:12px 16px}.section{padding:30px 16px}.hero h1{font-size:32px}.nav{display:none}}
 </style>
 </head>
 <body>
-<header>
-<h1>NOLINDO GLOBAL INTERNATIONAL</h1>
-<p>Supplier Daun Pisang Premium & Produk Natural Indonesia untuk Pasar Global</p>
-<a class="btn" href="https://wa.me/6281234567890">Hubungi WhatsApp</a>
-</header>
-<section>
-<div class="card">
-<h2>Tentang Kami</h2>
-<p>Kami adalah supplier daun pisang segar, daun pisang beku, dan produk natural Indonesia berkualitas ekspor. Melayani pasar Jepang, Timur Tengah, Eropa dan USA.</p>
-</div>
-<div class="card">
-<h2>Produk Kami</h2>
-<ul>
-<li>Daun Pisang Segar Premium</li>
-<li>Daun Pisang Beku (Frozen)</li>
-<li>Daun Pisang Kering & Produk Turunan</li>
-</ul>
-</div>
-<div class="card">
-<h2>Kontak</h2>
-<p><b>PT Nolindo Global International</b><br>
-Email: export@nolindoglobal.com<br>
-Website: nolindoglobal.com<br>
-WhatsApp: +62 812-3456-7890</p>
-</div>
-</section>
-<footer>© 2026 Nolindo Global International. All Rights Reserved.</footer>
+<div class="topbar"><div style="font-weight:800;color:#14352f">NOLINDO GLOBAL</div><div class="nav"><a href="#">HOME</a><a href="#about">ABOUT</a><a href="#products">PRODUCTS</a><a href="#specs">SPECIFICATIONS</a><a href="#contact">CONTACT</a></div><a href="#contact" class="btn-dark">Request a Quote</a></div>
+<div class="hero"><img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?q=80&w=1000"><div class="hero-content"><div class="eyebrow">INDONESIAN SPECIALIST SUPPLIER</div><h1>Fresh & Frozen Banana Leaves from Indonesia</h1><p>NOLINDO GLOBAL supplies Indonesian banana leaves for international food service, culinary, food manufacturing, retail, and distribution markets.</p><div class="meta">Specialist Supplier | Indonesia | Fresh & Frozen</div><div style="display:flex;gap:10px"><a href="#contact" class="btn-gold">Request a Quote</a><a href="#products" class="btn-outline">View Products</a><a href="#about" class="btn-outline">View Company Profile</a></div></div></div>
+<div class="strip4"><div>Fresh Supply</div><div>Frozen Format</div><div>Custom Specifications</div><div>B2B Inquiry</div></div>
+<div class="strip-dark"><div><div class="label">PRODUCT ORIGIN:</div><div class="val">Jonggol, Bogor, West Java</div></div><div><div class="label">DELIVERY AREA:</div><div class="val">Jakarta</div></div><div><div class="label">MINIMUM ORDER:</div><div class="val">50 kg</div></div><div><div class="label">PRODUCTION CAPACITY:</div><div class="val">750–1,500 kg per week</div></div></div>
+<div class="section beige" id="about"><div class="about-grid"><div><small>COMPANY</small><h2>About NOLINDO GLOBAL</h2><p style="font-size:12px;color:#555;margin-top:10px">PT. NOLINDO GLOBAL INTERNASIONAL is an Indonesian export company specializing in Fresh and Frozen Banana Leaves. We connect Indonesian agricultural supply with international commercial demand, with attention to product specifications, preparation, packaging, and buyer requirements.</p></div><div class="card-info"><h3>COMPANY INFORMATION</h3><div class="k">LEGAL NAME</div><div class="v">PT. NOLINDO GLOBAL INTERNASIONAL</div><div class="k">BRAND</div><div class="v">NOLINDO GLOBAL</div><div class="k">NIB</div><div class="v">2208260001143</div><div class="k">COUNTRY OF ORIGIN</div><div class="v">Indonesia</div><div class="k">SPECIALIZATION</div><div class="v">Fresh & Frozen Banana Leaves</div></div></div></div>
+<div class="section" id="products"><small>PRODUCT RANGE</small><h2>Our Products</h2><p style="font-size:11px;color:#777">Specialized banana leaf supply for commercial food and culinary applications.</p><div class="prod-grid"><div class="prod-card"><img src="https://images.unsplash.com/photo-1599940824394-b87987ceb72a?q=80&w=800"><div class="body"><div style="font-size:10px;letter-spacing:1.5px;color:#b68d4a">01 / FRESH FORMAT</div><div style="font-weight:700;margin:6px 0;font-size:13px">FRESH BANANA LEAVES</div><div style="font-size:11px;color:#666">Selected and prepared according to agreed commercial specifications for culinary use, food presentation, food packaging, catering, restaurants, and food service.</div></div></div><div class="prod-card dark"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=800"><div class="body"><div style="font-size:10px;letter-spacing:1.5px;color:#d4b97a">02 / FROZEN FORMAT</div><div style="font-weight:700;margin:6px 0;font-size:13px">FROZEN BANANA LEAVES</div><div style="font-size:11px;opacity:.8">Prepared in a preserved format for buyers requiring longer-distance distribution and commercial storage.</div></div></div></div></div>
+<div class="section beige" id="specs"><small>COMMERCIAL SPECIFICATIONS</small><h2>Product Specifications</h2><div class="table-wrap"><table><tr><th>Specification</th><th>Fresh Banana Leaves</th><th>Frozen Banana Leaves</th></tr><tr><td><b>Product</b></td><td>Fresh Banana Leaves</td><td>Frozen Banana Leaves</td></tr><tr><td><b>Origin</b></td><td>Indonesia</td><td>Indonesia</td></tr><tr><td><b>Leaf Size</b></td><td>Custom sizes available</td><td>Custom sizes available</td></tr><tr><td><b>Grade</b></td><td>According to agreed buyer specifications</td><td>According to agreed buyer specifications</td></tr><tr><td><b>Condition</b></td><td>Fresh</td><td>Frozen</td></tr><tr><td><b>Packaging</b></td><td>Custom packaging available</td></tr><tr><td><b>Packing Configuration</b></td><td>According to buyer requirements</td><td>According to buyer requirements</td></tr><tr><td><b>Labeling</b></td><td>Can be discussed according to market and buyer requirements</td><td>Can be discussed according to market and buyer requirements</td></tr><tr><td><b>Quantity</b></td><td>Based on order requirements and commercial discussion</td><td>Based on order requirements and commercial discussion</td></tr></table></div></div>
+<div class="section"><small>WORKING TOGETHER</small><h2>How We Work</h2><div class="steps"><div class="step"><div class="n">01</div><h4>Inquiry</h4><p style="font-size:11px;color:#666">Share your product requirements, quantity, destination, and preferred specifications.</p></div><div class="step"><div class="n">02</div><h4>Specification Review</h4><p style="font-size:11px;color:#666">We discuss product condition, leaf dimensions, grade, packaging, and related buyer requirements.</p></div><div class="step"><div class="n">03</div><h4>Quotation</h4><p style="font-size:11px;color:#666">Commercial discussion is prepared based on the agreed requirements and destination.</p></div><div class="step"><div class="n">04</div><h4>Order Preparation</h4><p style="font-size:11px;color:#666">The product is prepared according to confirmed specifications.</p></div><div class="step"><div class="n">05</div><h4>Packing</h4><p style="font-size:11px;color:#666">Products are packed according to the agreed packing configuration.</p></div><div class="step"><div class="n">06</div><h4>Shipment</h4><p style="font-size:11px;color:#666">The order is prepared for the agreed international logistics arrangement.</p></div></div></div>
+<div class="section beige" id="contact"><div style="display:grid;grid-template-columns:.8fr 1.4fr;gap:40px"><div><small>CONTACT</small><h2>Request a Quote</h2><p style="font-size:11px;color:#666;margin-top:8px">Share your product, quantity, specifications, packaging preferences, and destination.</p><div style="margin-top:20px;border-top:1px solid #ddd;padding-top:16px;font-size:11px;line-height:2"><b>PT. NOLINDO GLOBAL INTERNASIONAL</b><br>info@nolindoglobal.com<br>export@nolindoglobal.com<br>ceo@nolindoglobal.com<br><br><b>WhatsApp: +62 82279203570</b><br><br>Jl. Swatantra 1 Kav 7C No. 90, RT 005/RW 005, Jatirasa, Jatiasih, Bekasi, West Java, Indonesia<br><br><b>NIB: 2208260001143</b></div></div><div class="form"><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label>Name *</label><input></div><div><label>Company *</label><input></div><div><label>Country *</label><input></div><div><label>Email *</label><input></div><div><label>WhatsApp</label><input></div><div><label>Product *</label><select><option>Select product</option><option>Fresh Banana Leaves</option><option>Frozen Banana Leaves</option></select></div><div><label>Fresh / Frozen</label><select><option>Fresh Banana Leaves</option><option>Frozen Banana Leaves</option></select></div><div><label>Quantity</label><input></div></div><label>Leaf Size</label><input><label>Packaging Requirements</label><input><label>Destination</label><input><label>Message</label><textarea rows="4"></textarea><button class="btn-submit" onclick="window.open('https://wa.me/6282279203570?text=Halo%20Nolindo%20Global,%20saya%20ingin%20inquiry%20banana%20leaves')">Submit Inquiry</button></div></div></div>
+<div class="footer"><div>PT. NOLINDO GLOBAL INTERNASIONAL<br>Indonesian Supplier of Fresh & Frozen Banana Leaves<br><br>NIB: 2208260001143<br><br>© All rights reserved.</div><div>Jl. Swatantra 1 Kav 7C No. 90, RT 005/RW 005, Jatirasa, Jatiasih, Bekasi, West Java, Indonesia<br><br>info@nolindoglobal.com<br>export@nolindoglobal.com<br>ceo@nolindoglobal.com<br><br>WhatsApp: +62 82279203570</div><div><div style="color:#d4b97a;font-weight:700;margin-bottom:10px">NAVIGATE</div>About<br>Products<br>Specifications<br>Contact</div></div>
 </body>
-</html>
+  </html>
