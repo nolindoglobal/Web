@@ -394,31 +394,32 @@
     </div>
    </section>
   </main>
-  <div id="company-profile-modal" class="profile-modal-backdrop fixed inset-0 z-[60] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
-   <div class="profile-dialog relative w-full max-w-3xl rounded-sm bg-[#fffdf8] p-6 shadow-2xl sm:p-10">
-    <button id="profile-modal-close" type="button" data-template-id="profile-close" class="canva-button focus-ring absolute right-4 top-4 rounded-sm px-3 py-2 text-2xl font-bold text-[#163d31]" aria-label="Close company profile" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 16px;">×</button> <img data-template-id="profile-modal-logo" loading="lazy" class="canva-image h-12 w-auto object-contain" src="canva://MAHWO9MfLyc/1" alt="NOLINDO GLOBAL official logo">
-    <h2 id="profile-modal-title" data-template-id="profile-modal-title-text" class="canva-text mt-6 font-bold tracking-tight text-[#163d31]" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 28px;">NOLINDO GLOBAL — Company Profile</h2>
-    <p data-template-id="profile-helper" class="canva-text mt-2 text-sm text-[#59655f]" style="color: rgb(89, 101, 95); font-weight: 400; font-style: normal; font-size: 16px;">View online or save a copy for your records.</p>
-    <div class="mt-7 grid gap-6 text-sm leading-6 text-[#43514b] sm:grid-cols-2">
-     <div>
-      <h3 data-template-id="profile-company-heading" class="canva-text font-bold text-[#163d31]" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 19px;">Company Information</h3>
-      <p data-template-id="profile-company-copy" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">PT. NOLINDO GLOBAL INTERNASIONAL, branded as NOLINDO GLOBAL, is an Indonesian supplier/exporter of Fresh &amp; Frozen Banana Leaves.</p>
-      <p data-template-id="profile-origin" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">Country of Origin: Indonesia</p>
-      <p data-template-id="profile-nib" class="canva-text" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">NIB: 2208260001143</p>
-     </div>
-     <div>
-      <h3 data-template-id="profile-products-heading" class="canva-text font-bold text-[#163d31]" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 19px;">Products &amp; Approach</h3>
-      <p data-template-id="profile-products-copy" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">Fresh Banana Leaves and Frozen Banana Leaves. Product specifications, leaf size, grade, condition, packaging, packing configuration, labeling, and quantity are confirmed according to buyer requirements.</p>
-      <p data-template-id="profile-specs" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">Quality approach: products are selected, prepared, and packed according to agreed commercial specifications.</p>
-      <p data-template-id="profile-work" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">How We Work: Inquiry, Specification Review, Quotation, Order Preparation, Packing, Shipment.</p>
-     </div>
-     <div class="sm:col-span-2">
-      <h3 data-template-id="profile-contact-heading" class="canva-text font-bold text-[#163d31]" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 19px;">Request a Quote</h3>
-      <p data-template-id="profile-contact-copy" class="canva-text mt-2" style="color: rgb(67, 81, 75); font-weight: 400; font-style: normal; font-size: 16px;">Jl. Swatantra 1 Kav 7C No. 90, RT 005/RW 005, Jatirasa, Jatiasih, Bekasi, West Java, Indonesia. info@nolindoglobal.com · export@nolindoglobal.com · ceo@nolindoglobal.com · WhatsApp +62 82279203570 · nolindoglobal.com</p>
-     </div>
-    </div><a id="profile-download" href="./compro.pdf" target="_blank" class="btn-gold" style="background:var(--gold); color:#fff; padding:10px 18px; border-radius:8px; font-weight:700; text-decoration:none; display:inline-block;">View Company Profile</a> type="button" data-template-id="profile-download" class="canva-button btn btn-gold focus-ring mt-8 w-full rounded-sm px-6 py-4" style="background: rgb(169, 132, 73); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Download Company Profile</button>
-   </div>
+<div id="company-profile-modal" class="profile-modal-backdrop fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+  <div class="profile-dialog relative w-full max-w-2xl bg-white rounded-xl p-8 max-h-[90vh] overflow-y-auto">
+    <button id="profile-modal-close" type="button" class="absolute top-4 right-4 text-2xl">×</button>
+    <h2 id="profile-modal-title" class="text-xl font-bold">NOLINDO GLOBAL — Company Profile</h2>
+    <p data-template-id="profile-helper" class="text-sm text-gray-500 mt-1">View online or save a copy for your records.</p>
+    <div class="mt-7 grid gap-6 text-sm leading-relaxed sm:grid-cols-2">
+      <div>
+        <h3 data-template-id="profile-company-heading" class="font-bold">Company Information</h3>
+        <p data-template-id="profile-company-copy" class="mt-2 text-gray-600">PT. NOLINDO GLOBAL INTERNASIONAL branded as NOLINDO GLOBAL, is an Indonesian supplier/exporter of Fresh & Frozen Banana Leaves.</p>
+        <p data-template-id="profile-origin" class="mt-3 text-gray-600">Country of Origin: Indonesia</p>
+        <p data-template-id="profile-nib" class="text-gray-600">NIB: 2208260001143</p>
+      </div>
+      <div>
+        <h3 data-template-id="profile-products-heading" class="font-bold">Products & Approach</h3>
+        <p data-template-id="profile-products-copy" class="mt-2 text-gray-600">Fresh Banana Leaves and Frozen Banana Leaves. Product specifications, leaf size, grade, condition, packaging, packing configuration, labeling, and quantity are confirmed according to buyer requirements.</p>
+        <p data-template-id="profile-specs" class="mt-3 text-gray-600">Quality approach: products are selected, prepared, and packed according to agreed commercial specifications.</p>
+        <p data-template-id="profile-work" class="mt-3 text-gray-600">How We Work: Inquiry, Specification Review, Quotation, Order Preparation, Packing, Shipment.</p>
+      </div>
+      <div class="sm:col-span-2">
+        <h3 data-template-id="profile-contact-heading" class="font-bold">Request a Quote</h3>
+        <p data-template-id="profile-contact-copy" class="mt-2 text-xs text-gray-600">Jl. Swatantra 1 Kav 7C No. 90, RT 005/RW 005, Jatirasa, Jatiasih, Bekasi, West Java, Indonesia. info@nolindoglobal.com · export@nolindoglobal.com · ceo@nolindoglobal.com · WhatsApp +62 82279203570 · nolindoglobal.com</p>
+      </div>
+    </div>
+    <a id="profile-download" href="./Nolindo-Global-Company-Profile.pdf" target="_blank" class="mt-8 flex w-full justify-center rounded-sm px-6 py-4 font-bold text-white" style="background: rgb(169, 132, 73);">Download Company Profile</a>
   </div>
+</div>
   <div id="company-profile-print" class="profile-print-only" aria-hidden="true"><img data-template-id="print-profile-logo" loading="lazy" src="canva://MAHWO9MfLyc/1" alt="NOLINDO GLOBAL official logo">
    <h1 data-template-id="print-profile-title" style="color: rgb(22, 61, 49); font-weight: 700; font-style: normal; font-size: 32px;">NOLINDO GLOBAL — Company Profile</h1>
    <p data-template-id="print-profile-description" style="color: rgb(24, 32, 29); font-weight: 400; font-style: normal; font-size: 16px;">PT. NOLINDO GLOBAL INTERNASIONAL is an Indonesian supplier/exporter of Fresh &amp; Frozen Banana Leaves from Indonesia.</p>
